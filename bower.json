@@ -1,0 +1,25 @@
+{
+  "name": "dev-boilerplate",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "normalize.css": "~3.0.2"
+  },
+  "install": {
+    "path": {
+      "css": "src/assets/scss/bower",
+      "scss": "src/assets/scss/bower",
+      "js": "src/assets/js/bower"
+    },
+    "sources": {
+      "jquery": "bower_components/jquery/dist/jquery.min.js",
+      "normalize.css": {
+        "mapping": [
+          {
+            "bower_components/normalize.css/normalize.css": "_normalize.scss"
+          }
+        ]
+      }
+    }
+  }
+}
