@@ -3,3 +3,38 @@
 // Styles for the home page.
 //==================================================================
 
+.site-input {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+
+  &__wrapper {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.screen-size {
+  margin: 30px auto;
+
+  &--mobile {
+    width: 320px;
+  }
+}
+
+.iframe {
+  &__wrapper {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+
+    iframe {
+      background: #fff;
+      box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

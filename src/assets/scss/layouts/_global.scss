@@ -2,3 +2,15 @@
 // Global Partial
 // Styles for global layout.
 //==================================================================
+
+body {
+  background: #f2f2f2;
+}
+
+.site-logo {
+  margin: 0;
+}
+
+.container {
+  @include outer-container;
+}

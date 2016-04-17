@@ -15,9 +15,25 @@
   <!-- end -->
 </head>
 <body>
+  <header class="primary-header">
+    <div class="container">
+      <h1 class="site-logo">Responsify</h1>
+    </div>
+  </header>
 
-  <h1>Welcome!</h1>
-  <p>Hello world.</p>
+  <div class="site-input">
+    <div class="container">
+      <div class="site-input__wrapper">
+        <input type="text" name="url">
+      </div>
+    </div>
+  </div>
+
+  <div class="screen-size screen-size--mobile">
+    <div class="iframe__wrapper">
+      <iframe src="http://www.sanbornmediafactory.com" height="100%" width="100%" allowfullscreen="" frameborder="0"></iframe>
+    </div>
+  </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="assets/js/bower/jquery/jquery.min.js"><\/script>')</script>
