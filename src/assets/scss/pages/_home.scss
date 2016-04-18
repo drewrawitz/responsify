@@ -6,30 +6,47 @@
 .site-input {
   background: #fff;
   border-bottom: 1px solid #e5e5e5;
+  padding: 15px 0;
 
   &__wrapper {
+    position: relative;
     width: 50%;
     margin: auto;
+
+    i {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      @include font-size(25px);
+      color: #ccc;
+    }
+  }
+
+  input[type=text] {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 50px;
+    padding: 10px 20px;
+
+    &:hover {
+      border-color: darken(#e5e5e5, 10%);
+    }
   }
 }
 
 .screen-size {
   margin: 30px auto;
-
-  &--mobile {
-    width: 320px;
-  }
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
 }
 
 .iframe {
   &__wrapper {
     position: relative;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
 
     iframe {
       background: #fff;
-      box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
       position: absolute;
       top:0;
       left: 0;

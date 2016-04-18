@@ -20,8 +20,6 @@
       plumber      = require('gulp-plumber'),
       notify       = require('gulp-notify'),
       clean        = require('gulp-clean'),
-      iconfont     = require('gulp-iconfont'),
-      iconfontCss  = require('gulp-iconfont-css'),
       runSequence  = require('run-sequence'),
       revHash      = require('gulp-rev-hash'),
       replace      = require('gulp-replace'),
@@ -136,27 +134,6 @@
   });
 
 /****************************
- * Icon Font Generator
- ****************************/
-
-  var fontName = 'icons';
-
-  gulp.task('iconfont', function(){
-    gulp.src([srcImages+'/icons/*.svg'], {base: 'src/assets'})
-      .pipe(iconfontCss({
-        fontName: fontName,
-        path: srcSASS+'/utilities/_icon-font-template.scss',
-        targetPath: '../../../../'+srcSASS+'/generated/_icon-font.scss',
-        fontPath: '../fonts/icons/'
-      }))
-      .pipe(iconfont({
-        fontName: fontName,
-        appendCodepoints: true
-       }))
-      .pipe(gulp.dest(destFonts+'/icons/'));
-  });
-
-/****************************
  * Clean / Copy Files
  ****************************/
 
@@ -168,6 +145,7 @@
   // Copy Files
   gulp.task('copy', [
       'copy:html',
+      'copy:fonts',
       'copy:jquery'
   ]);
 
@@ -178,6 +156,11 @@
       .pipe(replace(/{{JQUERY_VERSION}}/g, jquery_version))
       .pipe(revHash({assetsDir: destApp}))
       .pipe(gulp.dest(destApp));
+  });
+
+  gulp.task('copy:fonts', function() {
+    return gulp.src(srcFonts+'/*.*')
+      .pipe(gulp.dest(destFonts));
   });
 
   gulp.task('copy:jquery', function() {
@@ -237,11 +220,11 @@ gulp.task('webserver', function() {
   gulp.task('default', ['watch']);
 
   gulp.task('dev', function(cb) {
-    runSequence('clean', ['styles:dev', 'scripts:dev', 'images', 'iconfont'], 'copy',cb);
+    runSequence('clean', ['styles:dev', 'scripts:dev', 'images'], 'copy',cb);
   });
 
   gulp.task('build', function(cb) {
-    runSequence('clean', ['styles:prod', 'scripts:prod', 'images', 'iconfont'], 'copy',cb);
+    runSequence('clean', ['styles:prod', 'scripts:prod', 'images'], 'copy',cb);
   });
 
 
@@ -266,9 +249,6 @@ gulp.task('webserver', function() {
 
     // Watch image files
     gulp.watch(srcImages+'/**/*', ['images']);
-
-    // Watch for svg icons
-    gulp.watch(srcImages+'/icons/*.svg', ['iconfont']);
 
   });
 

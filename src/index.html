@@ -17,19 +17,50 @@
 <body>
   <header class="primary-header">
     <div class="container">
-      <h1 class="site-logo">Responsify</h1>
+      <h1 class="site-logo">
+        <a href="/">
+          <span class="site-logo--alt">R</span>esponsify
+        </a>
+      </h1>
+      <nav class="primary-nav">
+        <ul>
+          <li>
+            <a href="#" data-breakpoint="480">
+              <i class="icon-mobile"></i>
+              <span>Mobile</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-breakpoint="768">
+              <i class="icon-tablet"></i>
+              <span>Tablet</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-breakpoint="992">
+              <i class="icon-display"></i>
+              <span>Desktop</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-breakpoint="random">
+              <i class="icon-shuffle"></i>
+              <span>Random</span>
+            </a>
+          </li>
     </div>
   </header>
 
   <div class="site-input">
     <div class="container">
       <div class="site-input__wrapper">
-        <input type="text" name="url">
+        <input type="text" name="url" placeholder="http://www.example.com">
+        <i class="icon-circle-right"></i>
       </div>
     </div>
   </div>
 
-  <div class="screen-size screen-size--mobile">
+  <div id="screen-size" class="screen-size" style="width: 640px;">
     <div class="iframe__wrapper">
       <iframe src="http://www.sanbornmediafactory.com" height="100%" width="100%" allowfullscreen="" frameborder="0"></iframe>
     </div>

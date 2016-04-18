@@ -1,0 +1,206 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M0 64v640h1024v-640h-1024zM960 640h-896v-512h896v512zM672 768h-320l-32 128-64 64h512l-64-64z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"display",
+					"screen",
+					"monitor",
+					"computer",
+					"desktop",
+					"pc"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"order": 3,
+				"prevSize": 16,
+				"ligatures": "display, screen",
+				"name": "display",
+				"id": 87,
+				"code": 59648
+			},
+			"setIdx": 2,
+			"setId": 0,
+			"iconIdx": 86
+		},
+		{
+			"icon": {
+				"paths": [
+					"M736 0h-448c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h448c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM384 48h256v32h-256v-32zM512 960c-35.346 0-64-28.654-64-64s28.654-64 64-64 64 28.654 64 64-28.654 64-64 64zM768 768h-512v-640h512v640z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"mobile",
+					"cell-phone",
+					"handheld"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"order": 4,
+				"prevSize": 16,
+				"ligatures": "mobile, cell-phone",
+				"name": "mobile",
+				"id": 89,
+				"code": 59649
+			},
+			"setIdx": 2,
+			"setId": 0,
+			"iconIdx": 88
+		},
+		{
+			"icon": {
+				"paths": [
+					"M768 0h-576c-35.2 0-64 28.798-64 64v896c0 35.2 28.798 64 64 64h576c35.2 0 64-28.8 64-64v-896c0-35.202-28.8-64-64-64zM480 977.782c-27.492 0-49.782-22.29-49.782-49.782s22.29-49.782 49.782-49.782 49.782 22.29 49.782 49.782-22.29 49.782-49.782 49.782zM768 832h-576v-704h576v704z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"mobile",
+					"cell-phone",
+					"handheld",
+					"tablet",
+					"phablet"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"order": 2,
+				"prevSize": 16,
+				"ligatures": "mobile2, cell-phone2",
+				"name": "mobile2",
+				"id": 90,
+				"code": 59650
+			},
+			"setIdx": 2,
+			"setId": 0,
+			"iconIdx": 89
+		},
+		{
+			"icon": {
+				"paths": [
+					"M800 0h-640c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h640c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM480 992c-17.672 0-32-14.326-32-32s14.328-32 32-32 32 14.326 32 32-14.328 32-32 32zM768 896h-576v-768h576v768z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"tablet",
+					"mobile"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"order": 6,
+				"prevSize": 16,
+				"ligatures": "tablet, mobile3",
+				"name": "tablet",
+				"id": 91,
+				"code": 59651
+			},
+			"setIdx": 2,
+			"setId": 0,
+			"iconIdx": 90
+		},
+		{
+			"icon": {
+				"paths": [
+					"M768 704h-101.49l-160-160 160-160h101.49v160l224-224-224-224v160h-128c-16.974 0-33.252 6.744-45.254 18.746l-178.746 178.744-178.746-178.746c-12-12-28.28-18.744-45.254-18.744h-192v128h165.49l160 160-160 160h-165.49v128h192c16.974 0 33.252-6.742 45.254-18.746l178.746-178.744 178.746 178.744c12.002 12.004 28.28 18.746 45.254 18.746h128v160l224-224-224-224v160z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"shuffle",
+					"random",
+					"player"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"order": 5,
+				"prevSize": 16,
+				"ligatures": "shuffle, random",
+				"name": "shuffle",
+				"id": 305,
+				"code": 59652
+			},
+			"setIdx": 2,
+			"setId": 0,
+			"iconIdx": 304
+		},
+		{
+			"icon": {
+				"paths": [
+					"M512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512 512-229.23 512-512-229.23-512-512-512zM512 928c-229.75 0-416-186.25-416-416s186.25-416 416-416 416 186.25 416 416-186.25 416-416 416z",
+					"M354.744 706.744l90.512 90.512 285.254-285.256-285.256-285.254-90.508 90.508 194.744 194.746z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"circle-right",
+					"right",
+					"circle-next",
+					"arrow"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"order": 7,
+				"prevSize": 16,
+				"ligatures": "circle-right, right5",
+				"name": "circle-right",
+				"id": 323,
+				"code": 59653
+			},
+			"setIdx": 2,
+			"setId": 0,
+			"iconIdx": 322
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"embed": false
+		},
+		"imagePref": {
+			"prefix": "icon-",
+			"png": true,
+			"useClassSelector": true,
+			"color": 0,
+			"bgColor": 16777215,
+			"classSelector": ".icon"
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16
+	}
+}
