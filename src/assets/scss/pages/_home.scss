@@ -42,8 +42,23 @@
   }
 }
 
+.site-info {
+  padding: 10px 0;
+  @include font-size(12px);
+  text-align: right;
+
+  &__size {
+    background: $primary-color;
+    display: inline-block;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+  }
+}
+
 .screen-size {
-  margin: 30px auto;
+  margin: 10px auto;
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
 }
 

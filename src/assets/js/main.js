@@ -36,6 +36,7 @@
         breakpoint = getRandomInt(320, $(document).width());
       }
 
+      $('.site-info__size span').html(breakpoint);
       $('#screen-size').animate({
         width: breakpoint+'px'
       });
