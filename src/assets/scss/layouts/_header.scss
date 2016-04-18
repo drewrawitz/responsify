@@ -82,6 +82,7 @@ $header-bg: #333333;
       align-items: center;
       transition: background 0.3s ease;
 
+      &.is-active,
       &:hover {
         background: #000;
       }

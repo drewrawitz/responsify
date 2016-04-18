@@ -32,8 +32,15 @@
       var breakpoint = $(this).data('breakpoint');
 
       if(breakpoint === 'random') {
+        // remove any active states
+        $('a[data-breakpoint]').removeClass('is-active');
+
         // let's create a random number. the max is the width of the document.
         breakpoint = getRandomInt(320, $(document).width());
+      } else {
+        // add an active state
+        $('a[data-breakpoint]').removeClass('is-active');
+        $(this).addClass('is-active');
       }
 
       $('.site-info__size span').html(breakpoint);
