@@ -21,9 +21,12 @@
      * @return {boolean} true or false
      */
     function validateURL(text) {
-      var urlregex = new RegExp(
-            "^(http:\/\/www.|https:\/\/www.|ftp:\/\/www.|www.){1}([0-9A-Za-z]+\.)");
-      return urlregex.test(text);
+      var regex = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/g;
+      if(text.match(regex)) {
+        return true;
+      } else {
+        return false;
+      }
     }
 
     $('a[data-breakpoint]').on('click', function(e) {
